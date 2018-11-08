@@ -71,5 +71,5 @@ do
     find $i -name '*.h' -o -name '*.cpp' -o -name '*.c' -o -name '*.cc' \
         -o -name '*.thrift' -o -name '*.ini' -o -name '*.act' \
         -o -name 'CMakeLists.txt' -o -name '*.sh' \
-        | grep -v '\<builder\>\|rdsn\/thirdparty\|\.zk_install' >>$FILES_OUT
+        | grep -v '\<builder\>\|rdsn\/thirdparty\|rdsn\/DSN_ROOT\|\.zk_install' >>$FILES_OUT
 done
